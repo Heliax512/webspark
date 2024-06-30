@@ -20,7 +20,6 @@ class _ProgressScreenState extends State<ProgressScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await Future.delayed(Duration(seconds: 3));
       int taskCount = Logic.tasks.length;
       for (int i = 0; i < Logic.tasks.length; i++) {
         Logic.tasks[i].countWay();
