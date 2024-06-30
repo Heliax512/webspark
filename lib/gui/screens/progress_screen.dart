@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:webspark/data/strings.dart';
 import 'package:webspark/gui/screens/result_list_screen.dart';
 import 'package:webspark/gui/widgets/send_button.dart';
 import 'package:webspark/logic/logic.dart';
-import 'package:webspark/logic/task.dart';
 import 'package:webspark/network/requests.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 

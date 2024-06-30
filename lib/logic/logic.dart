@@ -1,6 +1,5 @@
 import 'package:webspark/data/strings.dart';
 import 'package:webspark/logic/task.dart';
-import 'package:webspark/logic/way_part.dart';
 
 class Logic {
   static List<Task> tasks = [];

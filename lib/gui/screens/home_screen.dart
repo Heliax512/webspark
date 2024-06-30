@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:webspark/data/strings.dart';
 import 'package:webspark/gui/screens/progress_screen.dart';

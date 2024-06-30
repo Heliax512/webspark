@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webspark/data/strings.dart';
 import 'package:webspark/gui/widgets/preview_item.dart';
-import 'package:webspark/gui/widgets/results_item.dart';
+
 import 'package:webspark/logic/logic.dart';
 import 'package:webspark/logic/task.dart';
 
@@ -47,8 +47,9 @@ class _PreviewScreenState extends State<PreviewScreen> {
                   child: GridView.count(
                       physics: const NeverScrollableScrollPhysics(),
                       crossAxisCount: widget.task.field.length,
-                      children:
-                          List.generate(widget.task.field.length * widget.task.field.length , (index) {
+                      children: List.generate(
+                          widget.task.field.length * widget.task.field.length,
+                          (index) {
                         return PreviewItem(
                           task: widget.task,
                           index: index,
