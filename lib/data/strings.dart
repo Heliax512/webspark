@@ -1,5 +1,6 @@
 class Strings {  
-  Strings._();   
+  Strings._();
+  static const String pref_link ="link";   
   static const String link = "https://flutter.webspark.dev/flutter/api";
   static const String home_screen = "Home Screen";
   static const String progress_screen = "Progress Screen";

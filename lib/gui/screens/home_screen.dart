@@ -3,6 +3,7 @@ import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:webspark/data/strings.dart';
 import 'package:webspark/gui/screens/progress_screen.dart';
 import 'package:webspark/gui/widgets/send_button.dart';
+import 'package:webspark/logic/logic.dart';
 import 'package:webspark/network/requests.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -65,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
         GestureDetector(
             onTap: () {
               if (activeButton) {
+                Logic.saveLink(linkController.text);
                 Reguests.get(callback, linkController.text);
                 activeButton = false;
                 setState(() {});

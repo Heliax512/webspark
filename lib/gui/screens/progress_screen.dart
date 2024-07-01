@@ -80,7 +80,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
               activeButton = false;
               setState(() {});
               for (int i = 0; i < Logic.tasks.length - 1; i++) {
-                Reguests.postRequest(lastCallback, Strings.link, Logic.tasks);
+                Reguests.postRequest(lastCallback, Logic.getLink(), Logic.tasks);
               }
             },
             child: Padding(
